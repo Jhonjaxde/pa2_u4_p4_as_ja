@@ -1,5 +1,8 @@
 package com.example.demo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -21,11 +24,16 @@ public class Pa2U4P4AsJaApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 		Propietario p = new Propietario();
-		p.setApellido("Arteaga");
-		p.setCedula("1727");
-		p.setNombre("jhon");
-		//this.iPropietarioService.guardar(p);
+		p.setApellido("Salazar");
+		p.setCedula("89321");
+		p.setNombre("Augusto");
 		
+		List<Propietario> lista = new ArrayList<>();
+		lista.add(p);
+		
+		
+		//this.iPropietarioService.buscarTodos();
+		//this.iPropietarioService.buscarId(1);
 	}
 
 }
